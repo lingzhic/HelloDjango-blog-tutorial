@@ -15,6 +15,13 @@ class IndexView(PaginationMixin, ListView):
     paginate_by = 10
 
 
+class AboutView(PaginationMixin, ListView):
+    model = Post
+    template_name = "about.html"
+    context_object_name = "post_list"
+    paginate_by = 10
+
+
 class CategoryView(IndexView):
     def get_queryset(self):
         cate = get_object_or_404(Category, pk=self.kwargs.get("pk"))

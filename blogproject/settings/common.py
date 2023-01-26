@@ -29,10 +29,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "pure_pagination",  # 分页
-    "haystack",  # 搜索
-    "blog.apps.BlogConfig",  # 注册 blog 应用
-    "comments.apps.CommentsConfig",  # 注册 comments 应用
+    "pure_pagination",  # pagination
+    "haystack",  # search
+    "blog.apps.BlogConfig",  # register the blog application
+    "comments.apps.CommentsConfig",  # register the comment application
 ]
 
 MIDDLEWARE = [
@@ -90,9 +90,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = "zh-hans"
+LANGUAGE_CODE = "en"
 
-TIME_ZONE = "Asia/Shanghai"
+TIME_ZONE = "Australia/Melbourne"
 
 USE_I18N = True
 
